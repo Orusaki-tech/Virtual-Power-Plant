@@ -1,7 +1,6 @@
-Markdown
 # Virtual Power Plant (VPP) Analytics Pipeline ⚡
 
-An end-to-end data pipeline and analytics project built to analyze grid loads, solar generation, and spot pricing anomalies across **Great Britain (GB)** and **Ireland (IE)** using Python, dbt (data build tool), and Jupyter Notebooks.
+An end-to-end data pipeline and analytics project built to analyze grid loads, solar generation, and spot pricing anomalies across **Great Britain (GB)** and **Ireland (IE)** using **Python, Pandas, dbt (data build tool), DuckDB, and Jupyter Notebooks**.
 
 ---
 
@@ -17,30 +16,11 @@ An end-to-end data pipeline and analytics project built to analyze grid loads, s
 ```text
 Virtual-Power-Plant/
 │
-├── vpp_analytics/                # dbt project directory
+├── vpp_analytics/                # dbt project directory (DuckDB backend)
 │   ├── models/                   # SQL data models (staging & marts)
 │   │   ├── staging/              # Raw data cleaning and normalization
 │   │   └── marts/                # Aggregated analytical summaries
 │   ├── seeds/                    # Source CSV data files
 │   └── dbt_project.yml           # dbt configuration
 │
-└── Virtual_Power_Plant.ipynb     # End-to-end execution & reporting notebook
-🚀 Getting Started
-Prerequisites
-Python 3.x
-
-dbt-core / dbt adapter
-
-Jupyter Notebook
-
-Running the Pipeline
-Clone the repository:
-
-Bash
-git clone [https://github.com/Orusaki-tech/Virtual-Power-Plant.git](https://github.com/Orusaki-tech/Virtual-Power-Plant.git)
-Navigate into the dbt project folder and run your models:
-
-Bash
-cd vpp_analytics
-dbt run
-Open the Jupyter Notebook Virtual_Power_Plant.ipynb to review the full analytical workflow and data visualizations.
+└── Virtual_Power_Plant.ipynb     # End-to-end execution, Pandas processing, & reporting notebook
